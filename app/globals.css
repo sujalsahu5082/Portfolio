@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Theme tokens ─────────────────────────────────────────────────── */
+:root {
+  /* Light mode */
+  --color-void:      #F0F4FF;
+  --color-elevated:  #FFFFFF;
+  --color-panel:     #E8EEF8;
+  --color-line:      #CBD5E8;
+  --color-ink-primary: #0F172A;
+  --color-ink-muted:   #475569;
+  --color-ink-faint:   #5B6880;
+  --color-electric-bright: #0284C7;
+  --color-violet:          #7C3AED;
+  --glass-bg:        rgba(255,255,255,0.7);
+  --glass-border:    rgba(100,116,166,0.18);
+  --scrollbar-track: #E8EEF8;
+  --scrollbar-thumb: #CBD5E8;
+  --scrollbar-hover: #A3B3CC;
+}
+
+.dark {
+  /* Dark mode */
+  --color-void:      #05070D;
+  --color-elevated:  #0B1020;
+  --color-panel:     #0E1424;
+  --color-line:      #1B2236;
+  --color-ink-primary: #E7EAF3;
+  --color-ink-muted:   #8B93A7;
+  --color-ink-faint:   #586079;
+  --color-electric-bright: #38BDF8;
+  --color-violet:          #8B5CF6;
+  --glass-bg:        linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.015));
+  --glass-border:    rgba(255,255,255,0.08);
+  --scrollbar-track: #05070D;
+  --scrollbar-thumb: #1B2236;
+  --scrollbar-hover: #2A3354;
+}
+
+/* ─── Base ─────────────────────────────────────────────────────────── */
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  background-color: var(--color-void);
+}
+
+body {
+  background-color: var(--color-void);
+  color: var(--color-ink-primary);
+  font-family: var(--font-body), sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background-color: rgba(79, 70, 229, 0.4);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-hover);
+}
+
+:focus-visible {
+  outline: 2px solid #38bdf8;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ─── Component utilities ──────────────────────────────────────────── */
+@layer components {
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+  }
+
+  .text-gradient {
+    background: linear-gradient(90deg, #ffffff 0%, #c7d2fe 50%, #93c5fd 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Light-mode override for text-gradient — use indigo tones instead of white */
+  :root:not(.dark) .text-gradient {
+    background: linear-gradient(90deg, #1e3a8a 0%, #4f46e5 50%, #0ea5e9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .grid-bg {
+    background-image: linear-gradient(
+        to right,
+        rgba(100, 116, 166, 0.12) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgba(100, 116, 166, 0.12) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+
+  .dark .grid-bg {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.04) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono), monospace;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: var(--color-ink-faint);
+  }
+
+  /* transparent-white utilities that are invisible in light mode — override them */
+  :root:not(.dark) .bg-white\/\[0\.03\],
+  :root:not(.dark) .bg-white\/5,
+  :root:not(.dark) .bg-white\/8 {
+    background-color: rgba(15, 23, 42, 0.05);
+  }
+  :root:not(.dark) .hover\:bg-white\/5:hover,
+  :root:not(.dark) .hover\:bg-white\/8:hover {
+    background-color: rgba(15, 23, 42, 0.08);
+  }
+}
+
+/* ─── Animations ───────────────────────────────────────────────────── */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
