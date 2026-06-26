@@ -39,6 +39,11 @@ export const metadata: Metadata = {
     title: `${profile.name} — ${profile.title}`,
     description: profile.summary,
   },
+  icons: {
+    icon: "/fav.jpg",
+    shortcut: "/fav.jpg",
+    apple: "/fav.jpg",
+  },
 };
 
 export default function RootLayout({
