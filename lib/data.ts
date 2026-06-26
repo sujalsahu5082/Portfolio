@@ -10,7 +10,7 @@ export const profile = {
   github: "https://github.com/sujalsahu5082",
   resumeFile: "/resume/Sujal_Sahu_Resume.pdf",
   summary:
-    "Computer Science undergraduate with internship experience in data analytics, Python, SQL, Power BI, and AI integration. Proven ability to build KPI dashboards, automate reporting, and deliver actionable insights from large datasets. Hands-on with LLMs, REST APIs, and full-stack development across analytics, AR, and web projects. Seeking to drive data-driven impact in a fast-paced analytics or data science role.",
+    "Computer Science undergraduate with internship experience in data analytics, Python, SQL, Flask, and AI integration. Proven ability to build full-stack analytics dashboards, integrate LLM-powered chatbots (Groq LLaMA 3.3), automate reporting, and deliver actionable insights from large datasets. Hands-on with REST APIs, LLMs, and full-stack development across analytics, AR, and web projects. Seeking to drive data-driven impact in a fast-paced analytics or data science role.",
 };
 
 export const heroMetrics = [
@@ -27,7 +27,7 @@ export const education = [
     location: "Visakhapatnam, India",
     degree: "Bachelor of Technology in Computer Science Engineering",
     detail: "CGPA: 8.4 / 10",
-    duration: "Expected May 2027",
+    duration: "Aug 2023 – May 2027",
   },
   {
     institution: "DRISHTI CPS, TIH, IIT Indore",
@@ -51,6 +51,7 @@ export const technicalSkills = [
       "Scikit-learn",
       "Matplotlib",
       "Seaborn",
+      "OpenPyXL",
       "Exploratory Data Analysis",
       "Data Cleaning",
       "Feature Engineering",
@@ -67,16 +68,19 @@ export const technicalSkills = [
     category: "AI and APIs",
     items: [
       "Google Gemini API",
+      "Groq LLaMA 3.3 API",
+      "Claude API",
       "Sarvam AI API",
       "OpenAI Whisper",
       "FastAPI",
+      "Flask",
       "LLM Prompt Engineering",
       "Generative AI",
     ],
   },
   {
     category: "Tools and Platforms",
-    items: ["Git", "GitHub", "Docker", "Postman", "QGIS", "Unity", "VS Code"],
+    items: ["Git", "GitHub", "Docker", "Postman", "Vercel", "Render", "QGIS", "Unity", "VS Code"],
   },
   {
     category: "Core CS",
@@ -92,9 +96,9 @@ export const experience = [
     location: "Kirandul, Chhattisgarh, India",
     duration: "May 2026 – Jun 2026",
     points: [
-      "Engineered an end-to-end Workforce Analytics Dashboard in Power BI, consolidating multi-department employee data to support data-driven decision-making for HR and senior operations leadership.",
-      "Cleaned and preprocessed over 5,000 employee records achieving 95% data accuracy; built DAX-powered KPI dashboards tracking attrition rate, headcount distribution, and productivity metrics, accelerating trend identification by 40%.",
-      "Partnered with cross-functional stakeholders to gather reporting requirements and automated scheduled visual reports, saving 3 hours per week of manual reporting effort.",
+      "Developed a full-stack Workforce Analytics web application using Python, Flask, and Pandas as the ETL and backend layer, with a JavaScript (Chart.js, AJAX) and HTML5/CSS3 frontend; consolidated multi-department employee data from Excel (.xlsx) via OpenPyXL to enable data-driven decision-making for HR and senior operations leadership.",
+      "Executed end-to-end data cleaning and preprocessing on 5,000+ employee records using Pandas, achieving 95% data accuracy; designed interactive KPI dashboards tracking attrition rate, headcount distribution, and productivity metrics, reducing trend identification time by 40%.",
+      "Integrated an AI-powered chatbot via Groq LLaMA 3.3 REST API to deliver instant natural-language workforce insights; automated scheduled report generation, eliminating 3 hours per week of manual HR reporting effort.",
     ],
   },
   {
@@ -136,12 +140,12 @@ export const experience = [
 export const projects = [
   {
     name: "NMDC Workforce Analytics Dashboard",
-    stack: ["Python", "Power BI", "DAX", "SQL", "Power Query", "Excel"],
+    stack: ["Python", "Flask", "Pandas", "JavaScript", "Excel", "Groq LLaMA 3.3"],
     duration: "May 2026",
     points: [
-      "Architected a full-featured Power BI dashboard tracking workforce KPIs including headcount distribution, attrition rate, department productivity, and tenure analysis across over 5,000 employee records for NMDC Limited.",
-      "Applied multi-stage data cleaning using Python and Power Query to resolve missing values, duplicate records, and schema inconsistencies, raising data accuracy to 95% before loading into the reporting layer.",
-      "Authored advanced DAX measures and calculated columns enabling dynamic cross-filtering and drill-through analysis; automated data refreshes saved 3 hours per week of manual HR reporting.",
+      "Architected a full-stack workforce analytics web application using Flask and Pandas, tracking KPIs including headcount distribution, attrition rate, department productivity, and tenure analysis across over 5,000 employee records stored in Excel (.xlsx) for NMDC Limited.",
+      "Applied multi-stage data cleaning with Pandas and OpenPyXL to resolve missing values, duplicate records, and schema inconsistencies, raising data accuracy to 95%; rendered interactive charts via JavaScript (Chart.js) with AJAX-driven dynamic updates on a responsive HTML5/CSS3 frontend.",
+      "Integrated an AI chatbot powered by Groq LLaMA 3.3 API for instant natural-language workforce queries; automated data refresh workflows saved 3 hours per week of manual HR reporting effort.",
     ],
   },
   {
@@ -173,7 +177,7 @@ export const achievements = [
     duration: "Sep 2025",
     points: [
       "Participated at national level among thousands of competing teams; built AgroSphere, an agri-tech platform delivering AI-driven crop recommendations and real-time market price analytics for smallholder farmers, under mentorship of Mr. Gurpreet Singh Chhabra.",
-      "Delivered a fully functional prototype within a 36-hour deadline as part of a 6-member cross-functional team; applied Agile sprint methodology, strengthening leadership, rapid problem-solving, and stakeholder communication skills.",
+      "Delivered a fully functional prototype within a 36-hour deadline as part of a 5-member cross-functional team; applied Agile sprint methodology, strengthening leadership, rapid problem-solving, and stakeholder communication skills.",
     ],
   },
 ];
@@ -181,7 +185,7 @@ export const achievements = [
 export const leadership = [
   {
     role: "Campus Ambassador, Google Gemini",
-    org: "Google, Hybrid India",
+    org: "Google, Hybrid",
     duration: "May 2026 – Sep 2026",
     points: [
       "Planned and delivered 5+ hands-on Generative AI workshops covering the Google Gemini ecosystem, reaching over 200 students and driving measurable AI tool adoption across student communities.",
@@ -189,8 +193,8 @@ export const leadership = [
   },
   {
     role: "Open Source Contributor, GSSoC 2026",
-    org: "GirlScript Summer of Code, India",
-    duration: "May 2026 – Present",
+    org: "GirlScript Summer of Code",
+    duration: "May 2026 – Sep 2026",
     points: [
       "Contributed pull requests and code reviews to open source repositories under GSSoC 2026 using Git and GitHub; improved feature coverage and code quality across data science and full-stack web development projects.",
     ],
