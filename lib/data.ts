@@ -140,6 +140,8 @@ export const experience = [
 export const projects = [
   {
     name: "NMDC Workforce Analytics Dashboard",
+    image: "/nmdc-workforce-analytics.png",
+    link: "https://nmdc-project.onrender.com",
     stack: ["Python", "Flask", "Pandas", "JavaScript", "Excel", "Groq LLaMA 3.3"],
     duration: "May 2026",
     points: [
@@ -150,6 +152,8 @@ export const projects = [
   },
   {
     name: "Market Entry Analysis, Automotive Industry",
+    image: "/market-entry-analysis.png",
+    link: "https://market-entry-analysis-for-abg-motors.onrender.com",
     stack: ["Python", "SQL", "Pandas", "NumPy", "Seaborn", "Power BI"],
     duration: "May 2026",
     points: [
@@ -160,6 +164,8 @@ export const projects = [
   },
   {
     name: "LectureIQ, AI-Powered Learning Assistant",
+    image: "/lecture-iq.png",
+    link: "https://lecture-iq-drab.vercel.app",
     stack: ["Python", "React.js", "FastAPI", "Whisper", "Google Gemini API"],
     duration: "Feb 2026",
     points: [
@@ -218,15 +224,36 @@ export const leadership = [
 ];
 
 export const certifications = [
-  { name: "Data Analytics Job Simulation", issuer: "Deloitte (Forage)", date: "Aug 2025" },
+  {
+    name: "Data Analytics Job Simulation",
+    issuer: "Deloitte (Forage)",
+    date: "Aug 2025",
+    file: "/deloitte-data-analytics.pdf",
+  },
   {
     name: "Oracle Cloud Infrastructure 2025 Certified Data Science Professional",
     issuer: "Oracle",
     date: "Oct 2025",
+    file: "/oracle-oci-data-science.pdf",
   },
-  { name: "Google AI Essentials", issuer: "Google", date: "May 2026" },
-  { name: "Google AI", issuer: "Google", date: "May 2026" },
-  { name: "IBM Data Science Professional Certificate", issuer: "IBM (Coursera)", date: "May 2026" },
+  {
+    name: "Google AI Essentials",
+    issuer: "Google",
+    date: "May 2026",
+    file: "/google-ai-essentials.pdf",
+  },
+  {
+    name: "Google AI",
+    issuer: "Google",
+    date: "May 2026",
+    file: "/google-ai.pdf",
+  },
+  {
+    name: "IBM Data Science Professional Certificate",
+    issuer: "IBM (Coursera)",
+    date: "May 2026",
+    file: "/ibm-data-science.pdf",
+  },
   {
     name: "Google Data Analytics Professional Certificate",
     issuer: "Google (Coursera)",
