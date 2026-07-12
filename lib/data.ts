@@ -255,9 +255,10 @@ export const certifications = [
     file: "/ibm-data-science.pdf",
   },
   {
-    name: "Google Data Analytics Professional Certificate",
-    issuer: "Google (Coursera)",
+    name: "Microsoft Certified: Fabric Analytics Engineer Associate",
+    issuer: "Microsoft",
     date: "Jul 2026",
+    file: "/Microsoft Certified - Fabric Analytics Engineer Associate.pdf",
   },
 ];
 

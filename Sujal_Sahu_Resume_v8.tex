@@ -1,0 +1,299 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{microtype}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.65in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-4pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{%
+  \item\small{#1}\vspace{-1.5pt}%
+}
+
+\newcommand{\resumeSubheading}[4]{%
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small{#2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}%
+}
+
+\newcommand{\resumeProjectHeading}[2]{%
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2 \\
+    \end{tabular*}\vspace{-5pt}%
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{%
+  \begin{itemize}[leftmargin=0.13in, label={}]%
+}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{%
+  \begin{itemize}[leftmargin=0.18in, topsep=1pt, itemsep=0pt, parsep=0pt]%
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%=====================================================================
+%  PAGE 1
+%=====================================================================
+
+%----------HEADING----------
+\begin{center}
+  {\Huge\bfseries\scshape Sujal Sahu}\\[4pt]
+  \small
+  +91 7489310095
+  \;$|$\;
+  \href{mailto:sujalsahu177@gmail.com}{\underline{sujalsahu177@gmail.com}}
+  \;$|$\;
+  \href{https://linkedin.com/in/sujal-sahu-b08678294}{\underline{https://linkedin.com/in/sujal-sahu-b08678294}}
+  \;$|$\;
+  \href{https://github.com/sujalsahu5082}{\underline{https://github.com/sujalsahu5082}}
+\end{center}
+
+\vspace{-4pt}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\vspace{2pt}
+\small{
+  Computer Science undergraduate with internship experience in data analytics, Python, SQL, Flask, and AI integration. Proven ability to build full-stack analytics dashboards, integrate LLM-powered chatbots (Groq LLaMA 3.3), automate reporting, and deliver actionable insights from large datasets. Hands-on with REST APIs, LLMs, and full-stack development across analytics, AR, and web projects. Seeking to drive data-driven impact in a fast-paced analytics or data science role.
+}
+
+\vspace{3pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\vspace{2pt}
+\begin{itemize}[leftmargin=0.13in, label={}, itemsep=2pt, topsep=0pt]
+  \small{
+    \item \textbf{Programming Languages:}   Python, SQL, JavaScript, HTML5, CSS3
+    \item \textbf{Data and Analytics:}      Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, OpenPyXL, Exploratory Data Analysis, Data Cleaning, Feature Engineering, Statistical Analysis, KPI Tracking, Reporting Automation
+    \item \textbf{BI and Visualization:}    Power BI, DAX, Power Query, Tableau, Advanced Microsoft Excel
+    \item \textbf{AI and APIs:}             Google Gemini API, Groq LLaMA 3.3 API, Claude API, Sarvam AI API, OpenAI Whisper, FastAPI, Flask, LLM Prompt Engineering, Generative AI
+    \item \textbf{Tools and Platforms:}     Git, GitHub, Docker, Postman, Vercel, Render, QGIS, Unity, VS Code
+    \item \textbf{Core CS:}                 Data Structures and Algorithms, Object-Oriented Programming, Agile Methodology
+  }
+\end{itemize}
+
+\vspace{3pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {GITAM Deemed University}{Visakhapatnam, India}
+    {Bachelor of Technology in Computer Science Engineering - CGPA: 8.4 / 10}{Aug 2023 -- May 2027}
+  \vspace{2pt}
+  \resumeSubheading
+    {DRISHTI CPS, TIH, IIT Indore}{Indore, India}
+    {Certification in Artificial Intelligence and Data Science}{Oct 2025 -- Jun 2026}
+\resumeSubHeadingListEnd
+
+\vspace{3pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Data Analytics Intern}{May 2026 -- Jun 2026}
+    {NMDC Limited, On-site}{Kirandul, Chhattisgarh, India}
+  \resumeItemListStart
+    \resumeItem{Developed a full-stack Workforce Analytics web application using Python, Flask, and Pandas as the ETL and backend layer, with a JavaScript (Chart.js, AJAX) and HTML5/CSS3 frontend; consolidated multi-department employee data from Excel (.xlsx) via OpenPyXL to enable data-driven decision-making for HR and senior operations leadership.}
+    \resumeItem{Executed end-to-end data cleaning and preprocessing on 5,000+ employee records using Pandas, achieving 95\% data accuracy; designed interactive KPI dashboards tracking attrition rate, headcount distribution, and productivity metrics, reducing trend identification time by 40\%.}
+    \resumeItem{Integrated an AI-powered chatbot via Groq LLaMA 3.3 REST API to deliver instant natural-language workforce insights; automated scheduled report generation, eliminating 3 hours per week of manual HR reporting effort.}
+  \resumeItemListEnd
+
+  \vspace{2pt}
+
+  \resumeSubheading
+    {Data Science and AI Intern}{May 2026 -- Jun 2026}
+    {Internshala, Remote}{India}
+  \resumeItemListStart
+    \resumeItem{Led a data-driven Market Entry Analysis project assessing the feasibility of launching an automotive brand in the Indian market using statistical modeling, segmentation analysis, and competitive intelligence; delivered findings that narrowed strategic focus to 3 actionable market segments.}
+    \resumeItem{Executed exploratory data analysis on over 10,000 sales records using Python and SQL; identified key customer behavior patterns, regional demand shifts, and pricing gaps across 5+ competitor brands.}
+    \resumeItem{Developed interactive competitor benchmarking dashboards in Power BI, surfacing 3 high-potential market segments and reducing strategic planning cycle time by 25\%.}
+  \resumeItemListEnd
+
+  \vspace{2pt}
+
+  \resumeSubheading
+    {Unity Developer Intern}{Jan 2026 -- Apr 2026}
+    {CXR, GITAM, On-site}{Visakhapatnam, Andhra Pradesh, India}
+  \resumeItemListStart
+    \resumeItem{Developed a Unity-based Augmented Reality mobile application for real-time multilingual speech translation, integrating Sarvam AI API for Indian-language speech-to-text and text-to-speech within an immersive mobile interface.}
+    \resumeItem{Implemented an end-to-end pipeline covering audio capture, Sarvam AI API transcription and translation, and AR audio playback, supporting 5+ Indian language pairs with near real-time latency on Android devices.}
+    \resumeItem{Optimized the Unity rendering pipeline and API call concurrency, reducing end-to-end translation latency by 35\% and improving user experience across live multilingual field environments.}
+  \resumeItemListEnd
+
+  \vspace{2pt}
+
+  \resumeSubheading
+    {Web Development Intern}{Dec 2024 -- Jan 2025}
+    {Teachnook, Remote}{India}
+  \resumeItemListStart
+    \resumeItem{Built and shipped 5 responsive, mobile-first web pages using React.js, HTML5, CSS3, and Bootstrap; integrated RESTful APIs for dynamic content delivery and streamlined team workflows via Git and GitHub, reducing integration conflicts by 30\%.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%=====================================================================
+%  PAGE 2 -- forced break before Projects
+%=====================================================================
+\newpage
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{NMDC Workforce Analytics Dashboard} $|$ \emph{Python, Flask, Pandas, JavaScript, Excel, Groq LLaMA 3.3}}{May 2026}
+  \resumeItemListStart
+    \resumeItem{Architected a full-stack workforce analytics web application using Flask and Pandas, tracking KPIs including headcount distribution, attrition rate, department productivity, and tenure analysis across over 5,000 employee records stored in Excel (.xlsx) for NMDC Limited.}
+    \resumeItem{Applied multi-stage data cleaning with Pandas and OpenPyXL to resolve missing values, duplicate records, and schema inconsistencies, raising data accuracy to 95\%; rendered interactive charts via JavaScript (Chart.js) with AJAX-driven dynamic updates on a responsive HTML5/CSS3 frontend.}
+    \resumeItem{Integrated an AI chatbot powered by Groq LLaMA 3.3 API for instant natural-language workforce queries; automated data refresh workflows saved 3 hours per week of manual HR reporting effort.}
+  \resumeItemListEnd
+
+  \vspace{2pt}
+
+  \resumeProjectHeading
+    {\textbf{Market Entry Analysis, Automotive Industry} $|$ \emph{Python, SQL, Pandas, NumPy, Seaborn, Power BI}}{May 2026}
+  \resumeItemListStart
+    \resumeItem{Conducted an end-to-end market feasibility study for an automotive brand entering India; processed over 10,000 sales records using Python and SQL for aggregation, trend analysis, and data wrangling.}
+    \resumeItem{Applied RFM-based customer segmentation and time-series demand forecasting to identify 3 high-potential regional segments; benchmarked 5+ competitors on pricing, features, and market share.}
+    \resumeItem{Delivered an interactive Power BI report with QGIS-powered geospatial visualizations; strategic recommendations reduced the client planning cycle time by 25\%.}
+  \resumeItemListEnd
+
+  \vspace{2pt}
+
+  \resumeProjectHeading
+    {\textbf{LectureIQ, AI-Powered Learning Assistant} $|$ \emph{Python, React.js, FastAPI, Whisper, Google Gemini API}}{Feb 2026}
+  \resumeItemListStart
+    \resumeItem{Built a full-stack AI web application for the Gemini 3 Hackathon that ingests lecture videos and automatically generates structured study notes, flashcards, and multiple-choice assessments using OpenAI Whisper and Google Gemini API.}
+    \resumeItem{Architected an asynchronous FastAPI backend with a multi-stage video processing pipeline; achieved over 90\% speech-to-text accuracy with Whisper and used Gemini API for context-aware summarization and question generation.}
+    \resumeItem{Engineered a responsive React.js frontend with real-time progress indicators, reducing student note-taking time by 60\% and improving content accessibility for over 100 test users.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{4pt}
+
+%-----------ACHIEVEMENTS AND HACKATHONS-----------
+\section{Achievements and Hackathons}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{Smart India Hackathon 2025} $|$ \emph{Team AgroSphere, SIH25010, National Level}}{Sep 2025}
+  \resumeItemListStart
+    \resumeItem{Participated at national level among thousands of competing teams; built AgroSphere, an agri-tech platform delivering AI-driven crop recommendations and real-time market price analytics for smallholder farmers, under mentorship of Mr. Gurpreet Singh Chhabra.}
+    \resumeItem{Delivered a fully functional prototype within a 36-hour deadline as part of a 5-member cross-functional team; applied Agile sprint methodology, strengthening leadership, rapid problem-solving, and stakeholder communication skills.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{4pt}
+
+%-----------ACTIVITIES-----------
+\section{Leadership and Activities}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Campus Ambassador, Google Gemini}{May 2026 -- Sep 2026}
+    {Google, Hybrid}{India}
+  \resumeItemListStart
+    \resumeItem{Planned and delivered 5+ hands-on Generative AI workshops covering the Google Gemini ecosystem, reaching over 200 students and driving measurable AI tool adoption across student communities.}
+  \resumeItemListEnd
+
+  \vspace{1pt}
+
+  \resumeSubheading
+    {Open Source Contributor, GSSoC 2026}{May 2026 -- Sep 2026}
+    {GirlScript Summer of Code}{India}
+  \resumeItemListStart
+    \resumeItem{Contributed pull requests and code reviews to open source repositories under GSSoC 2026 using Git and GitHub; improved feature coverage and code quality across data science and full-stack web development projects.}
+  \resumeItemListEnd
+
+  \vspace{1pt}
+
+  \resumeSubheading
+    {Competitive Programming}{2023 -- Present}
+    {LeetCode}{}
+  \resumeItemListStart
+    \resumeItem{Solved over 300 algorithmic problems on LeetCode spanning arrays, dynamic programming, graphs, and trees; consistently strengthened time and space complexity optimization skills relevant to software and data engineering roles.}
+  \resumeItemListEnd
+
+  \vspace{1pt}
+
+  \resumeSubheading
+    {Club Member, Pragnya Technical Club}{2023 -- Present}
+    {GITAM University}{Visakhapatnam, India}
+  \resumeItemListStart
+    \resumeItem{Attended classes for EigenLearn training sessions and solved assessment questions assigned as part of the structured learning curriculum, strengthening core technical and problem-solving skills.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{4pt}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\vspace{2pt}
+\begin{itemize}[leftmargin=0.13in, label={}, itemsep=3pt, topsep=0pt]
+  \small{
+    \item \textbf{Data Analytics Job Simulation} \textemdash{} Deloitte (Forage) \hfill \textit{Aug 2025}
+    \item \textbf{Oracle Cloud Infrastructure 2025 Certified Data Science Professional} \textemdash{} Oracle \hfill \textit{Oct 2025}
+    \item \textbf{Google AI Essentials} \textemdash{} Google \hfill \textit{May 2026}
+    \item \textbf{IBM Data Science Professional Certificate} \textemdash{} IBM (Coursera) \hfill \textit{May 2026}
+    \item \textbf{Microsoft Certified: Fabric Analytics Engineer Associate} \textemdash{} Microsoft \hfill \textit{Jul 2026}
+  }
+\end{itemize}
+
+\end{document}
