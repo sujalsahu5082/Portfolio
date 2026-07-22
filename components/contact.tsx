@@ -71,7 +71,7 @@ export function Contact() {
         </div>
 
         <Reveal delay={0.2} className="mt-10">
-          <a href={profile.resumeFile} download>
+          <a href={profile.resumeFile} download="Sujal_Sahu_Resume.pdf">
             <Button variant="primary" size="md">
               Download Full Resume
             </Button>

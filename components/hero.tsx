@@ -67,7 +67,7 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 0.24 }}
               className="mt-9 flex flex-wrap items-center gap-3"
             >
-              <a href={profile.resumeFile} download>
+              <a href={profile.resumeFile} download="Sujal_Sahu_Resume.pdf">
                 <Button variant="primary">
                   <Download size={16} />
                   Download Resume

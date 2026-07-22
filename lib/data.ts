@@ -8,7 +8,7 @@ export const profile = {
   email: "sujalsahu177@gmail.com",
   linkedin: "https://linkedin.com/in/sujal-sahu-b08678294",
   github: "https://github.com/sujalsahu5082",
-  resumeFile: "/resume/Sujal_Sahu_Resume.pdf",
+  resumeFile: "/Sujal_Sahu_Resume.pdf",
   summary:
     "Computer Science undergraduate with internship experience in data analytics, Python, SQL, Flask, and AI integration. Proven ability to build full-stack analytics dashboards, integrate LLM-powered chatbots (Groq LLaMA 3.3), automate reporting, and deliver actionable insights from large datasets. Hands-on with REST APIs, LLMs, and full-stack development across analytics, AR, and web projects. Seeking to drive data-driven impact in a fast-paced analytics or data science role.",
 };
