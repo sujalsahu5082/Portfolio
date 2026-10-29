@@ -10,14 +10,14 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen flex-col justify-center overflow-hidden pt-28 pb-16"
+      className="relative flex min-h-screen flex-col justify-between overflow-hidden pt-32 pb-12 sm:pt-36"
     >
       {/* backdrop */}
       <div className="absolute inset-0 grid-bg opacity-60" />
       <div className="absolute inset-0 bg-aurora" />
       <div className="absolute inset-0 bg-grid-fade" />
 
-      <div className="relative mx-auto w-full max-w-6xl px-6">
+      <div className="relative mx-auto my-auto w-full max-w-6xl px-6">
         <div className="flex flex-col-reverse items-center gap-12 lg:flex-row lg:items-center lg:justify-between">
 
           {/* ── Left: text content ── */}
@@ -125,7 +125,7 @@ export function Hero() {
                 src="/PHOTO.jpeg"
                 alt={`${profile.name} — profile photo`}
                 fill
-                className="object-cover object-top"
+                className="object-cover object-center"
                 priority
               />
             </div>

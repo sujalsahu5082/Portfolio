@@ -178,12 +178,12 @@ export const projects = [
 
 export const achievements = [
   {
-    name: "Smart India Hackathon 2025",
-    meta: "Team AgroSphere, SIH25010, National Level",
-    duration: "Sep 2025",
+    name: "Smart India Hackathon (SIH) 2026",
+    meta: "Team GITAM129 – RAGForge, ANVAYA, Air-Gapped Multimodal Intelligence Platform | Python, SimHash, Hybrid Vector Search, RAG",
+    duration: "Aug 2026",
     points: [
-      "Participated at national level among thousands of competing teams; built AgroSphere, an agri-tech platform delivering AI-driven crop recommendations and real-time market price analytics for smallholder farmers, under mentorship of Mr. Gurpreet Singh Chhabra.",
-      "Delivered a fully functional prototype within a 36-hour deadline as part of a 5-member cross-functional team; applied Agile sprint methodology, strengthening leadership, rapid problem-solving, and stakeholder communication skills.",
+      "Secured a Top 30 position in the internal round of Smart India Hackathon (SIH), Aug 2026.",
+      "Built a 100% air-gapped multimodal intelligence analysis platform for NTRO defense units and counter-intelligence teams that ingests PDF reports, drone photos, and audio wiretaps entirely offline (no cloud dependencies or GPUs), eliminates duplicates via 64-bit SimHash deduplication, and executes hybrid dense/sparse vector search to synthesize grounded briefings anchored with visual yellow marker page canvas proof.",
     ],
   },
 ];
@@ -237,10 +237,10 @@ export const certifications = [
     file: "/oracle-oci-data-science.pdf",
   },
   {
-    name: "Google AI Essentials",
-    issuer: "Google",
-    date: "May 2026",
-    file: "/google-ai-essentials.pdf",
+    name: "Python Programming",
+    issuer: "Reliance Foundation",
+    date: "Aug 2025",
+    file: "/PythonProgramming.pdf",
   },
   {
     name: "Google AI",
